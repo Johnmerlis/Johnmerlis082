@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="https://www.youtube.com" target="_blank">
+      <img src="youtube-logo.png" alt="YouTube Logo">
+    </a>
+  </header>
+
+  <main>
+    <section id="video-container">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <button id="play-button">Play</button>
+    </section>
+
+    <section id="subscribe-form">
+      <h2>Subscribe to this channel</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      
+      header {
+        background-color: #ff0000;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      header a img {
+        width: 100px;
+      }
+      
+      main {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      
+      #video-container {
+        flex: 2;
+        background-color: #fff;
+        padding: 20px;
+      }
+      
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+      
+      #play-button {
+        display: block;
+        margin: 20px auto;
+        background-color: #ff0000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #subscribe-form {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+      }
+      
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }</style>
+  </main>
+</body>
+</html>
